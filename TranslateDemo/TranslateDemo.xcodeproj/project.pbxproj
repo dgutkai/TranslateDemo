@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A525DFFD405F107B16F19C59 /* libPods-TranslateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F169CB46211404B4C63FBDD /* libPods-TranslateDemo.a */; };
+		B92565A1201833CD00725305 /* QCYBle.m in Sources */ = {isa = PBXBuildFile; fileRef = B92565A0201833CD00725305 /* QCYBle.m */; };
+		B92565A420183C4400725305 /* QCYEarphone.m in Sources */ = {isa = PBXBuildFile; fileRef = B92565A320183C4400725305 /* QCYEarphone.m */; };
 		B9810768201811AC00911167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9810767201811AC00911167 /* AppDelegate.m */; };
 		B981076B201811AC00911167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B981076A201811AC00911167 /* ViewController.m */; };
 		B981076E201811AC00911167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B981076C201811AC00911167 /* Main.storyboard */; };
@@ -14,9 +17,15 @@
 		B9810773201811AC00911167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9810772201811AC00911167 /* Assets.xcassets */; };
 		B9810776201811AC00911167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9810774201811AC00911167 /* LaunchScreen.storyboard */; };
 		B9810779201811AD00911167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9810778201811AD00911167 /* main.m */; };
+		B981078220181A8900911167 /* BLESearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B981078020181A8900911167 /* BLESearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F169CB46211404B4C63FBDD /* libPods-TranslateDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TranslateDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B925659F201833CD00725305 /* QCYBle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCYBle.h; sourceTree = "<group>"; };
+		B92565A0201833CD00725305 /* QCYBle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCYBle.m; sourceTree = "<group>"; };
+		B92565A220183C4400725305 /* QCYEarphone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCYEarphone.h; sourceTree = "<group>"; };
+		B92565A320183C4400725305 /* QCYEarphone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCYEarphone.m; sourceTree = "<group>"; };
 		B9810763201811AC00911167 /* TranslateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9810766201811AC00911167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9810767201811AC00911167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +37,10 @@
 		B9810775201811AC00911167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9810777201811AD00911167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9810778201811AD00911167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B981078020181A8900911167 /* BLESearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLESearchViewController.m; sourceTree = "<group>"; };
+		B981078120181A8900911167 /* BLESearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLESearchViewController.h; sourceTree = "<group>"; };
+		CC858E65D7CA4461EFA311AA /* Pods-TranslateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F0D9D9040C23268E337A7588 /* Pods-TranslateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +48,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A525DFFD405F107B16F19C59 /* libPods-TranslateDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B925659E2018339B00725305 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B925659F201833CD00725305 /* QCYBle.h */,
+				B92565A0201833CD00725305 /* QCYBle.m */,
+				B92565A220183C4400725305 /* QCYEarphone.h */,
+				B92565A320183C4400725305 /* QCYEarphone.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 		B981075A201811AC00911167 = {
 			isa = PBXGroup;
 			children = (
 				B9810765201811AC00911167 /* TranslateDemo */,
 				B9810764201811AC00911167 /* Products */,
+				E8817B52DD95B24C86A20518 /* Pods */,
+				DCD0153FDEEDF96221937071 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +87,10 @@
 		B9810765201811AC00911167 /* TranslateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B925659E2018339B00725305 /* Module */,
+				B981077F20181A2300911167 /* Controller */,
 				B9810766201811AC00911167 /* AppDelegate.h */,
 				B9810767201811AC00911167 /* AppDelegate.m */,
-				B9810769201811AC00911167 /* ViewController.h */,
-				B981076A201811AC00911167 /* ViewController.m */,
 				B981076C201811AC00911167 /* Main.storyboard */,
 				B9810772201811AC00911167 /* Assets.xcassets */,
 				B9810774201811AC00911167 /* LaunchScreen.storyboard */,
@@ -74,6 +101,34 @@
 			path = TranslateDemo;
 			sourceTree = "<group>";
 		};
+		B981077F20181A2300911167 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B981078120181A8900911167 /* BLESearchViewController.h */,
+				B981078020181A8900911167 /* BLESearchViewController.m */,
+				B9810769201811AC00911167 /* ViewController.h */,
+				B981076A201811AC00911167 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCD0153FDEEDF96221937071 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F169CB46211404B4C63FBDD /* libPods-TranslateDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8817B52DD95B24C86A20518 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC858E65D7CA4461EFA311AA /* Pods-TranslateDemo.debug.xcconfig */,
+				F0D9D9040C23268E337A7588 /* Pods-TranslateDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B981077C201811AD00911167 /* Build configuration list for PBXNativeTarget "TranslateDemo" */;
 			buildPhases = (
+				E8F6D6391D99D4C9DF76FA66 /* [CP] Check Pods Manifest.lock */,
 				B981075F201811AC00911167 /* Sources */,
 				B9810760201811AC00911167 /* Frameworks */,
 				B9810761201811AC00911167 /* Resources */,
+				2CCEA6C1F38700AD7A9064A8 /* [CP] Embed Pods Frameworks */,
+				5864886AAA60DA6A100AF09B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +198,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CCEA6C1F38700AD7A9064A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5864886AAA60DA6A100AF09B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F6D6391D99D4C9DF76FA66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B981075F201811AC00911167 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,7 +253,10 @@
 			files = (
 				B9810771201811AC00911167 /* TranslateDemo.xcdatamodeld in Sources */,
 				B981076B201811AC00911167 /* ViewController.m in Sources */,
+				B981078220181A8900911167 /* BLESearchViewController.m in Sources */,
+				B92565A1201833CD00725305 /* QCYBle.m in Sources */,
 				B9810779201811AD00911167 /* main.m in Sources */,
+				B92565A420183C4400725305 /* QCYEarphone.m in Sources */,
 				B9810768201811AC00911167 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +389,7 @@
 		};
 		B981077D201811AD00911167 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC858E65D7CA4461EFA311AA /* Pods-TranslateDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +404,7 @@
 		};
 		B981077E201811AD00911167 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D9D9040C23268E337A7588 /* Pods-TranslateDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

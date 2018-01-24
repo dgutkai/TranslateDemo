@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BabyBluetooth.h"
 
 @interface ViewController : UIViewController
-
+@property (strong, nonatomic) CBPeripheral *mPeripheral;
 
 @end
 
