@@ -1,0 +1,4 @@
+platform :ios, '8.0'
+target 'TranslateDemo' do 
+	pod 'BabyBluetooth','~> 0.7.0'
+end
