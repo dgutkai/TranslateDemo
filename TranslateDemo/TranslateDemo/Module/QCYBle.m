@@ -52,6 +52,12 @@
     __weak typeof(self) weakSelf = self;
     
     void (^notificationBlock)(CBPeripheral*, CBCharacteristic*, NSError*) = ^(CBPeripheral *peripheral, CBCharacteristic *characteristics, NSError *error) {
+        for (NSString *ekey in weakSelf.earphones) {
+            QCYEarphone *e = (QCYEarphone *)weakSelf.earphones[ekey];
+            if (![e.peripheral isEqual:peripheral]) {
+                [e writeData:characteristics.value];
+            }
+        }
         QCYEarphone *earphone = [self getEarphoneWithPeripheral:peripheral];
         if (earphone != nil) {
             [earphone onNotificationWithData:characteristics.value];
@@ -153,7 +159,13 @@
                 NSLog(@"search Characteristic name:%@", characteristic_tmp.UUID.UUIDString);
                 // 设置通知监听
                 if ([characteristic_tmp.UUID isEqual:[CBUUID UUIDWithString:CHARACTERISTIC_NOTIFY]]){
+                    QCYEarphone *earphone = (QCYEarphone *)weakSelf.earphones[peripheral.identifier.UUIDString];
+                    earphone.readCharacteristic = characteristic_tmp;
                     [weakSelf.baby notify:peripheral characteristic:characteristic_tmp block: notificationBlock];
+                }
+                if ([characteristic_tmp.UUID isEqual:[CBUUID UUIDWithString:CHARACTERISTIC_WRITE]]){
+                    QCYEarphone *earphone = (QCYEarphone *)weakSelf.earphones[peripheral.identifier.UUIDString];
+                    earphone.writeCharacteristic = characteristic_tmp;
                 }
             }
         }

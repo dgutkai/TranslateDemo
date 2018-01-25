@@ -11,9 +11,6 @@
 @interface QCYEarphone()
 {
     BabyBluetooth *_babyBluetooth;
-    CBCharacteristic *_readCharacteristic;
-    CBCharacteristic *_writeCharacteristic;
-    
     long sizecount;
     long time;
 }
@@ -52,20 +49,16 @@
     if (_writeCharacteristic == nil) {
         return;
     }
+    if (data == nil) {
+        return;
+    }
     [self.peripheral writeValue:data forCharacteristic:_writeCharacteristic type:CBCharacteristicWriteWithResponse];
 }
 
 - (void) onNotificationWithData: (NSData *)data{
-    sizecount += data.length;
-    long current = [[NSDate date] timeIntervalSince1970]*1000;
-    int dx = current - time;
-//    NSLog(@"QCYEarphone.current= %d, time = %d", current, time);
-    if (dx >= 3000) {
-        float px = (sizecount * 1.0f) / dx;
-        NSLog(@"QCYEarphone.Data.speed = %f", px);
-        sizecount = 0;
-        time = current;
-    }
+
+    NSLog(@"QCYEarphone.data= %@", data);
+    
     
 }
 @end

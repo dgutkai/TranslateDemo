@@ -18,7 +18,8 @@ typedef NS_ENUM(NSInteger, EarphoneState) {
 
 @interface QCYEarphone : NSObject
 @property (strong, nonatomic) CBPeripheral *peripheral;
-
+@property (strong, nonatomic) CBCharacteristic *readCharacteristic;
+@property (strong, nonatomic) CBCharacteristic *writeCharacteristic;
 - (instancetype) initWithPeripheral: (CBPeripheral *)peripheral;
 - (void) connect;
 - (void) disConnect;
