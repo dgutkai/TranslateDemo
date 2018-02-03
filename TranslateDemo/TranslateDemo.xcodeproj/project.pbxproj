@@ -10,6 +10,24 @@
 		A525DFFD405F107B16F19C59 /* libPods-TranslateDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F169CB46211404B4C63FBDD /* libPods-TranslateDemo.a */; };
 		B92565A1201833CD00725305 /* QCYBle.m in Sources */ = {isa = PBXBuildFile; fileRef = B92565A0201833CD00725305 /* QCYBle.m */; };
 		B92565A420183C4400725305 /* QCYEarphone.m in Sources */ = {isa = PBXBuildFile; fileRef = B92565A320183C4400725305 /* QCYEarphone.m */; };
+		B97005642025584D0095A3B4 /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97005632025584D0095A3B4 /* iflyMSC.framework */; };
+		B9700566202558900095A3B4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700565202558900095A3B4 /* libz.tbd */; };
+		B97005682025589B0095A3B4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97005672025589B0095A3B4 /* AVFoundation.framework */; };
+		B970056A202558AC0095A3B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700569202558AC0095A3B4 /* SystemConfiguration.framework */; };
+		B970056C202558B50095A3B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970056B202558B50095A3B4 /* Foundation.framework */; };
+		B970056E202558C40095A3B4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970056D202558C40095A3B4 /* CoreTelephony.framework */; };
+		B9700570202558CD0095A3B4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970056F202558CD0095A3B4 /* AudioToolbox.framework */; };
+		B9700572202558D40095A3B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700571202558D30095A3B4 /* UIKit.framework */; };
+		B9700574202558DA0095A3B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700573202558DA0095A3B4 /* CoreLocation.framework */; };
+		B9700576202558E10095A3B4 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700575202558E10095A3B4 /* Contacts.framework */; };
+		B9700578202558ED0095A3B4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700577202558ED0095A3B4 /* AddressBook.framework */; };
+		B970057A202558F40095A3B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9700579202558F40095A3B4 /* QuartzCore.framework */; };
+		B970057C202558FB0095A3B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970057B202558FB0095A3B4 /* CoreGraphics.framework */; };
+		B970057E202559020095A3B4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B970057D202559020095A3B4 /* libc++.tbd */; };
+		B9700580202559090095A3B4 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B970057F202559090095A3B4 /* libicucore.tbd */; };
+		B9700588202561420095A3B4 /* IATConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B9700583202561420095A3B4 /* IATConfig.m */; };
+		B970058A202561420095A3B4 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9700587202561420095A3B4 /* ISRDataHelper.m */; };
+		B970058E202565270095A3B4 /* AudioRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B970058D202565270095A3B4 /* AudioRecoder.m */; };
 		B9810768201811AC00911167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9810767201811AC00911167 /* AppDelegate.m */; };
 		B981076B201811AC00911167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B981076A201811AC00911167 /* ViewController.m */; };
 		B981076E201811AC00911167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B981076C201811AC00911167 /* Main.storyboard */; };
@@ -26,6 +44,27 @@
 		B92565A0201833CD00725305 /* QCYBle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCYBle.m; sourceTree = "<group>"; };
 		B92565A220183C4400725305 /* QCYEarphone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCYEarphone.h; sourceTree = "<group>"; };
 		B92565A320183C4400725305 /* QCYEarphone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCYEarphone.m; sourceTree = "<group>"; };
+		B97005632025584D0095A3B4 /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		B9700565202558900095A3B4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B97005672025589B0095A3B4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B9700569202558AC0095A3B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B970056B202558B50095A3B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B970056D202558C40095A3B4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B970056F202558CD0095A3B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B9700571202558D30095A3B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9700573202558DA0095A3B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B9700575202558E10095A3B4 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		B9700577202558ED0095A3B4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B9700579202558F40095A3B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B970057B202558FB0095A3B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B970057D202559020095A3B4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B970057F202559090095A3B4 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		B9700582202561420095A3B4 /* IATConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IATConfig.h; sourceTree = "<group>"; };
+		B9700583202561420095A3B4 /* IATConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IATConfig.m; sourceTree = "<group>"; };
+		B9700586202561420095A3B4 /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRDataHelper.h; sourceTree = "<group>"; };
+		B9700587202561420095A3B4 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
+		B970058C202565270095A3B4 /* AudioRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecoder.h; sourceTree = "<group>"; };
+		B970058D202565270095A3B4 /* AudioRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecoder.m; sourceTree = "<group>"; };
 		B9810763201811AC00911167 /* TranslateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9810766201811AC00911167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9810767201811AC00911167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +87,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9700580202559090095A3B4 /* libicucore.tbd in Frameworks */,
+				B970057E202559020095A3B4 /* libc++.tbd in Frameworks */,
+				B970057C202558FB0095A3B4 /* CoreGraphics.framework in Frameworks */,
+				B970057A202558F40095A3B4 /* QuartzCore.framework in Frameworks */,
+				B9700578202558ED0095A3B4 /* AddressBook.framework in Frameworks */,
+				B9700576202558E10095A3B4 /* Contacts.framework in Frameworks */,
+				B9700574202558DA0095A3B4 /* CoreLocation.framework in Frameworks */,
+				B9700572202558D40095A3B4 /* UIKit.framework in Frameworks */,
+				B9700570202558CD0095A3B4 /* AudioToolbox.framework in Frameworks */,
+				B970056E202558C40095A3B4 /* CoreTelephony.framework in Frameworks */,
+				B970056C202558B50095A3B4 /* Foundation.framework in Frameworks */,
+				B970056A202558AC0095A3B4 /* SystemConfiguration.framework in Frameworks */,
+				B97005682025589B0095A3B4 /* AVFoundation.framework in Frameworks */,
+				B9700566202558900095A3B4 /* libz.tbd in Frameworks */,
+				B97005642025584D0095A3B4 /* iflyMSC.framework in Frameworks */,
 				A525DFFD405F107B16F19C59 /* libPods-TranslateDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,12 +112,41 @@
 		B925659E2018339B00725305 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B970058B202565270095A3B4 /* audio */,
 				B925659F201833CD00725305 /* QCYBle.h */,
 				B92565A0201833CD00725305 /* QCYBle.m */,
 				B92565A220183C4400725305 /* QCYEarphone.h */,
 				B92565A320183C4400725305 /* QCYEarphone.m */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		B97005622025584D0095A3B4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B97005632025584D0095A3B4 /* iflyMSC.framework */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B9700581202561420095A3B4 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				B9700582202561420095A3B4 /* IATConfig.h */,
+				B9700583202561420095A3B4 /* IATConfig.m */,
+				B9700586202561420095A3B4 /* ISRDataHelper.h */,
+				B9700587202561420095A3B4 /* ISRDataHelper.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		B970058B202565270095A3B4 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				B970058C202565270095A3B4 /* AudioRecoder.h */,
+				B970058D202565270095A3B4 /* AudioRecoder.m */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 		B981075A201811AC00911167 = {
@@ -87,6 +170,8 @@
 		B9810765201811AC00911167 /* TranslateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B9700581202561420095A3B4 /* config */,
+				B97005622025584D0095A3B4 /* lib */,
 				B925659E2018339B00725305 /* Module */,
 				B981077F20181A2300911167 /* Controller */,
 				B9810766201811AC00911167 /* AppDelegate.h */,
@@ -115,6 +200,20 @@
 		DCD0153FDEEDF96221937071 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B970057F202559090095A3B4 /* libicucore.tbd */,
+				B970057D202559020095A3B4 /* libc++.tbd */,
+				B970057B202558FB0095A3B4 /* CoreGraphics.framework */,
+				B9700579202558F40095A3B4 /* QuartzCore.framework */,
+				B9700577202558ED0095A3B4 /* AddressBook.framework */,
+				B9700575202558E10095A3B4 /* Contacts.framework */,
+				B9700573202558DA0095A3B4 /* CoreLocation.framework */,
+				B9700571202558D30095A3B4 /* UIKit.framework */,
+				B970056F202558CD0095A3B4 /* AudioToolbox.framework */,
+				B970056D202558C40095A3B4 /* CoreTelephony.framework */,
+				B970056B202558B50095A3B4 /* Foundation.framework */,
+				B9700569202558AC0095A3B4 /* SystemConfiguration.framework */,
+				B97005672025589B0095A3B4 /* AVFoundation.framework */,
+				B9700565202558900095A3B4 /* libz.tbd */,
 				9F169CB46211404B4C63FBDD /* libPods-TranslateDemo.a */,
 			);
 			name = Frameworks;
@@ -253,10 +352,13 @@
 			files = (
 				B9810771201811AC00911167 /* TranslateDemo.xcdatamodeld in Sources */,
 				B981076B201811AC00911167 /* ViewController.m in Sources */,
+				B9700588202561420095A3B4 /* IATConfig.m in Sources */,
 				B981078220181A8900911167 /* BLESearchViewController.m in Sources */,
 				B92565A1201833CD00725305 /* QCYBle.m in Sources */,
 				B9810779201811AD00911167 /* main.m in Sources */,
 				B92565A420183C4400725305 /* QCYEarphone.m in Sources */,
+				B970058E202565270095A3B4 /* AudioRecoder.m in Sources */,
+				B970058A202561420095A3B4 /* ISRDataHelper.m in Sources */,
 				B9810768201811AC00911167 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +496,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DD5ARBQ9E;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranslateDemo/lib",
+				);
 				INFOPLIST_FILE = TranslateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.TranslateDemo";
@@ -409,6 +516,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DD5ARBQ9E;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranslateDemo/lib",
+				);
 				INFOPLIST_FILE = TranslateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.TranslateDemo";
