@@ -7,6 +7,7 @@
 //
 
 #import "QCYBle.h"
+#import "AVCDecoder.h"
 @interface QCYBle()
 {
     
@@ -23,6 +24,7 @@
     static dispatch_once_t oneToken;
     dispatch_once(&oneToken, ^{
         qcyBle = [[QCYBle alloc] init];
+        [AVCDecoder initAVCDecoder];
     });
     return qcyBle;
 }
@@ -110,6 +112,7 @@
         if (self.delegate != nil) {
             QCYEarphone *earphone = [weakSelf getEarphoneWithPeripheral:peripheral];
             if (earphone != nil) {
+                [earphone onConnected];
                 [weakSelf.delegate onConnected:earphone];
             }
         }
@@ -121,6 +124,7 @@
         if (self.delegate != nil) {
             QCYEarphone *earphone = [weakSelf getEarphoneWithPeripheral:peripheral];
             if (earphone != nil) {
+                [earphone onFailToConnect];
                 [weakSelf.delegate onFailToConnect:earphone];
             }
         }
@@ -132,6 +136,7 @@
         if (self.delegate != nil) {
             QCYEarphone *earphone = [weakSelf getEarphoneWithPeripheral:peripheral];
             if (earphone != nil) {
+                [earphone onDisconnected];
                 [weakSelf.delegate onDisconnected:earphone];
             }
         }

@@ -11,10 +11,12 @@
 #import "ISRDataHelper.h"
 #import "IATConfig.h"
 #import "AudioRecoder.h"
-
+#import "AVCDecoder.h"
+#import "PCMPlayer.h"
 @interface ViewController ()<IFlySpeechSynthesizerDelegate, IFlySpeechRecognizerDelegate, AudioRecoderDelegate>
 {
     AudioRecoder *recoder;
+    PCMPlayer *player;
 }
 @property (nonatomic, strong) IFlySpeechSynthesizer *iFlySpeechSynthesizer;
 //不带界面的识别对象
@@ -26,32 +28,77 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    recoder = [[AudioRecoder alloc] init];
-    recoder.delegate = self;
-    [recoder start];
-    //创建语音识别对象
-    _iFlySpeechRecognizer = [IFlySpeechRecognizer sharedInstance];
-    //设置音频源为音频流（-1）
-    [self.iFlySpeechRecognizer setParameter:@"-1" forKey:@"audio_source"];
-//    //设置识别参数
-//    //设置为听写模式
+
+    [AVCDecoder initAVCDecoder];
+    player = [[PCMPlayer alloc] init];
+//    recoder = [[AudioRecoder alloc] init];
+//    recoder.delegate = self;
+//    [recoder start];
+//    //创建语音识别对象
+//    _iFlySpeechRecognizer = [IFlySpeechRecognizer sharedInstance];
+//    //设置音频源为音频流（-1）
+//    [self.iFlySpeechRecognizer setParameter:@"-1" forKey:@"audio_source"];
+////    //设置识别参数
+////    //设置为听写模式
+////    [_iFlySpeechRecognizer setParameter: @"iat" forKey: [IFlySpeechConstant IFLY_DOMAIN]];
+////    //asr_audio_path 是录音文件名，设置value为nil或者为空取消保存，默认保存目录在Library/cache下。
+////    [_iFlySpeechRecognizer setParameter:nil forKey:[IFlySpeechConstant ASR_AUDIO_PATH]];
 //    [_iFlySpeechRecognizer setParameter: @"iat" forKey: [IFlySpeechConstant IFLY_DOMAIN]];
-//    //asr_audio_path 是录音文件名，设置value为nil或者为空取消保存，默认保存目录在Library/cache下。
-//    [_iFlySpeechRecognizer setParameter:nil forKey:[IFlySpeechConstant ASR_AUDIO_PATH]];
-    [_iFlySpeechRecognizer setParameter: @"iat" forKey: [IFlySpeechConstant IFLY_DOMAIN]];
-//    [_iFlySpeechRecognizer setParameter: @"1" forKey: [IFlySpeechConstant ASR_SCH]];
-//    [_iFlySpeechRecognizer setParameter: @"translate" forKey: @"addcap"];
-//    //中文转英文
-//    [_iFlySpeechRecognizer setParameter: @"zh" forKey: @"orilang"];
-//    [_iFlySpeechRecognizer setParameter: @"en" forKey: @"translang"];
+////    [_iFlySpeechRecognizer setParameter: @"1" forKey: [IFlySpeechConstant ASR_SCH]];
+////    [_iFlySpeechRecognizer setParameter: @"translate" forKey: @"addcap"];
+////    //中文转英文
+////    [_iFlySpeechRecognizer setParameter: @"zh" forKey: @"orilang"];
+////    [_iFlySpeechRecognizer setParameter: @"en" forKey: @"translang"];
+//
+//    [_iFlySpeechRecognizer setDelegate:self];
+//    //启动识别服务
+//    [_iFlySpeechRecognizer startListening];
+//    _resultString = @"";
     
-    [_iFlySpeechRecognizer setDelegate:self];
-    //启动识别服务
-    [_iFlySpeechRecognizer startListening];
-    _resultString = @"";
+    //        NSString *filepath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"audio.raw"];
+    NSString *filepath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"ABC.pcm"];
+    NSLog(@"filepath = %@",filepath);
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSLog(@"file exist = %d",[manager fileExistsAtPath:filepath]);
+    NSLog(@"file size = %lld",[[manager attributesOfItemAtPath:filepath error:nil] fileSize]) ;
+    file  = fopen([filepath UTF8String], "r");
+    if(file)
+    {
+        fseek(file, 0, SEEK_SET);
+        pcmDataBuffer = alloca(640);
+    }
+    else{
+        NSLog(@"!!!!!!!!!!!!!!!!");
+    }
     
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.01 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        int readLength = fread(pcmDataBuffer, 1, 640, file);//读取文件
+        
+//        NSData *data = [AVCDecoder enc2PCMWithByte:pcmDataBuffer Len:readLength];
+        NSData *data = [[NSData alloc] initWithBytes:pcmDataBuffer length:readLength];
+        if (data == nil) {
+            return;
+        }
+//        unsigned int outlen = 0;
+//        Byte *pOut = (Byte *)alloca(640);
+//        int result = airohadec_enc_to_pcm(pcmDataBuffer, readLength, pOut, &outlen);
+//        if (result < 0) {
+//            NSLog(@"decode fail");
+//            return;
+//        }
+//        NSData *data = [[NSData alloc] initWithBytes:pOut length:outlen];
+        [player pushData:data];
+//        outQB->mAudioDataByteSize = outlen;
+//        Byte *audiodata = (Byte *)outQB->mAudioData;
+//        for(int i=0;i<outlen;i++)
+//        {
+//            audiodata[i] = pOut[i];
+//        }
+    }];
+    [player start];
 }
 
 
@@ -167,4 +214,6 @@
         NSLog(@"录音回调%@", audioData);
     [self.iFlySpeechRecognizer writeAudio:audioData];//写入音频，让SDK识别。建议将音频数据分段写入。
 }
+
+
 @end

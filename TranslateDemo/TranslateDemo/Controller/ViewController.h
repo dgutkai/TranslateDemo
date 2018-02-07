@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "BabyBluetooth.h"
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+
+    Byte *pcmDataBuffer;//pcm的读文件数据区
+    FILE *file;//pcm源文件
+}
 @property (strong, nonatomic) CBPeripheral *mPeripheral;
+
 
 @end
 

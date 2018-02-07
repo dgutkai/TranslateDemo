@@ -28,6 +28,12 @@
 		B9700588202561420095A3B4 /* IATConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B9700583202561420095A3B4 /* IATConfig.m */; };
 		B970058A202561420095A3B4 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B9700587202561420095A3B4 /* ISRDataHelper.m */; };
 		B970058E202565270095A3B4 /* AudioRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B970058D202565270095A3B4 /* AudioRecoder.m */; };
+		B97005A52029738D0095A3B4 /* example_online.pcm in Resources */ = {isa = PBXBuildFile; fileRef = B97005A42029738D0095A3B4 /* example_online.pcm */; };
+		B97005A7202974EF0095A3B4 /* ABC.pcm in Resources */ = {isa = PBXBuildFile; fileRef = B97005A6202974EE0095A3B4 /* ABC.pcm */; };
+		B97005B2202ACA7D0095A3B4 /* libAVC_Decoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B97005B1202ACA7D0095A3B4 /* libAVC_Decoder.a */; };
+		B97005B4202ACBC20095A3B4 /* 1_8_AVC_UT.enc in Resources */ = {isa = PBXBuildFile; fileRef = B97005B3202ACBC20095A3B4 /* 1_8_AVC_UT.enc */; };
+		B97005B7202AD7750095A3B4 /* PCMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B97005B6202AD7750095A3B4 /* PCMPlayer.m */; };
+		B97005BA202AEB420095A3B4 /* AVCDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B97005B9202AEB410095A3B4 /* AVCDecoder.m */; };
 		B9810768201811AC00911167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9810767201811AC00911167 /* AppDelegate.m */; };
 		B981076B201811AC00911167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B981076A201811AC00911167 /* ViewController.m */; };
 		B981076E201811AC00911167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B981076C201811AC00911167 /* Main.storyboard */; };
@@ -65,6 +71,16 @@
 		B9700587202561420095A3B4 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRDataHelper.m; sourceTree = "<group>"; };
 		B970058C202565270095A3B4 /* AudioRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecoder.h; sourceTree = "<group>"; };
 		B970058D202565270095A3B4 /* AudioRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecoder.m; sourceTree = "<group>"; };
+		B97005A42029738D0095A3B4 /* example_online.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; name = example_online.pcm; path = "../../../../../../Downloads/RawAudioDataPlayer-master/example_online.pcm"; sourceTree = "<group>"; };
+		B97005A6202974EE0095A3B4 /* ABC.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; name = ABC.pcm; path = ../../../../../ABC.pcm; sourceTree = "<group>"; };
+		B97005B0202ACA7D0095A3B4 /* avc_decoder_sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avc_decoder_sample.h; sourceTree = "<group>"; };
+		B97005B1202ACA7D0095A3B4 /* libAVC_Decoder.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAVC_Decoder.a; sourceTree = "<group>"; };
+		B97005B3202ACBC20095A3B4 /* 1_8_AVC_UT.enc */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1_8_AVC_UT.enc; path = ../../../../../../Downloads/iOS_AVC_Decoder_v1.0.0/AVC_Decoder_Sample/AVC_Decoder_Sample/1_8_AVC_UT.enc; sourceTree = "<group>"; };
+		B97005B5202AD7750095A3B4 /* PCMPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMPlayer.h; sourceTree = "<group>"; };
+		B97005B6202AD7750095A3B4 /* PCMPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMPlayer.m; sourceTree = "<group>"; };
+		B97005B8202AEB410095A3B4 /* AVCDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVCDecoder.h; sourceTree = "<group>"; };
+		B97005B9202AEB410095A3B4 /* AVCDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCDecoder.m; sourceTree = "<group>"; };
+		B97005BB202AEF770095A3B4 /* QCYDeviceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCYDeviceProtocol.h; sourceTree = "<group>"; };
 		B9810763201811AC00911167 /* TranslateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9810766201811AC00911167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9810767201811AC00911167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +117,7 @@
 				B970056A202558AC0095A3B4 /* SystemConfiguration.framework in Frameworks */,
 				B97005682025589B0095A3B4 /* AVFoundation.framework in Frameworks */,
 				B9700566202558900095A3B4 /* libz.tbd in Frameworks */,
+				B97005B2202ACA7D0095A3B4 /* libAVC_Decoder.a in Frameworks */,
 				B97005642025584D0095A3B4 /* iflyMSC.framework in Frameworks */,
 				A525DFFD405F107B16F19C59 /* libPods-TranslateDemo.a in Frameworks */,
 			);
@@ -117,6 +134,7 @@
 				B92565A0201833CD00725305 /* QCYBle.m */,
 				B92565A220183C4400725305 /* QCYEarphone.h */,
 				B92565A320183C4400725305 /* QCYEarphone.m */,
+				B97005BB202AEF770095A3B4 /* QCYDeviceProtocol.h */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -124,6 +142,7 @@
 		B97005622025584D0095A3B4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				B97005AE202ACA7D0095A3B4 /* avcdecoder */,
 				B97005632025584D0095A3B4 /* iflyMSC.framework */,
 			);
 			path = lib;
@@ -145,8 +164,29 @@
 			children = (
 				B970058C202565270095A3B4 /* AudioRecoder.h */,
 				B970058D202565270095A3B4 /* AudioRecoder.m */,
+				B97005B5202AD7750095A3B4 /* PCMPlayer.h */,
+				B97005B6202AD7750095A3B4 /* PCMPlayer.m */,
+				B97005B8202AEB410095A3B4 /* AVCDecoder.h */,
+				B97005B9202AEB410095A3B4 /* AVCDecoder.m */,
 			);
 			path = audio;
+			sourceTree = "<group>";
+		};
+		B97005AE202ACA7D0095A3B4 /* avcdecoder */ = {
+			isa = PBXGroup;
+			children = (
+				B97005AF202ACA7D0095A3B4 /* inc */,
+				B97005B1202ACA7D0095A3B4 /* libAVC_Decoder.a */,
+			);
+			path = avcdecoder;
+			sourceTree = "<group>";
+		};
+		B97005AF202ACA7D0095A3B4 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				B97005B0202ACA7D0095A3B4 /* avc_decoder_sample.h */,
+			);
+			path = inc;
 			sourceTree = "<group>";
 		};
 		B981075A201811AC00911167 = {
@@ -193,6 +233,9 @@
 				B981078020181A8900911167 /* BLESearchViewController.m */,
 				B9810769201811AC00911167 /* ViewController.h */,
 				B981076A201811AC00911167 /* ViewController.m */,
+				B97005A42029738D0095A3B4 /* example_online.pcm */,
+				B97005A6202974EE0095A3B4 /* ABC.pcm */,
+				B97005B3202ACBC20095A3B4 /* 1_8_AVC_UT.enc */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,9 +332,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B97005A52029738D0095A3B4 /* example_online.pcm in Resources */,
 				B9810776201811AC00911167 /* LaunchScreen.storyboard in Resources */,
 				B9810773201811AC00911167 /* Assets.xcassets in Resources */,
+				B97005A7202974EF0095A3B4 /* ABC.pcm in Resources */,
 				B981076E201811AC00911167 /* Main.storyboard in Resources */,
+				B97005B4202ACBC20095A3B4 /* 1_8_AVC_UT.enc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,10 +398,12 @@
 			files = (
 				B9810771201811AC00911167 /* TranslateDemo.xcdatamodeld in Sources */,
 				B981076B201811AC00911167 /* ViewController.m in Sources */,
+				B97005B7202AD7750095A3B4 /* PCMPlayer.m in Sources */,
 				B9700588202561420095A3B4 /* IATConfig.m in Sources */,
 				B981078220181A8900911167 /* BLESearchViewController.m in Sources */,
 				B92565A1201833CD00725305 /* QCYBle.m in Sources */,
 				B9810779201811AD00911167 /* main.m in Sources */,
+				B97005BA202AEB420095A3B4 /* AVCDecoder.m in Sources */,
 				B92565A420183C4400725305 /* QCYEarphone.m in Sources */,
 				B970058E202565270095A3B4 /* AudioRecoder.m in Sources */,
 				B970058A202561420095A3B4 /* ISRDataHelper.m in Sources */,
@@ -501,8 +549,18 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TranslateDemo/lib",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BabyBluetooth\"",
+					"$(PROJECT_DIR)/TranslateDemo/lib/avcdecoder/inc",
+				);
 				INFOPLIST_FILE = TranslateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranslateDemo/lib/avcdecoder",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--.TranslateDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,8 +579,18 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TranslateDemo/lib",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BabyBluetooth\"",
+					"$(PROJECT_DIR)/TranslateDemo/lib/avcdecoder/inc",
+				);
 				INFOPLIST_FILE = TranslateDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TranslateDemo/lib/avcdecoder",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--.TranslateDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

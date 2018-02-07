@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BabyBluetooth.h"
-
+#import "QCYDeviceProtocol.h"
 typedef NS_ENUM(NSInteger, EarphoneState) {
     EarphoneStateDisconnected = 0,
     EarphoneStateConnecting,
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, EarphoneState) {
     EarphoneStateDisconnecting,
 };
 
-@interface QCYEarphone : NSObject
+@interface QCYEarphone : NSObject<QCYDeviceProtocol>
 @property (strong, nonatomic) CBPeripheral *peripheral;
 @property (strong, nonatomic) CBCharacteristic *readCharacteristic;
 @property (strong, nonatomic) CBCharacteristic *writeCharacteristic;
@@ -25,5 +25,4 @@ typedef NS_ENUM(NSInteger, EarphoneState) {
 - (void) disConnect;
 - (void) writeData: (NSData *)data;
 - (void) writeString: (NSString *)string;
-- (void) onNotificationWithData: (NSData *)data;
 @end

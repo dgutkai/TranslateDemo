@@ -10,9 +10,9 @@
 #import "QCYEarphone.h"
 #import "BabyBluetooth.h"
 
-#define SERVICE_MAIN @"CAA1" // 主服务UUID(新版本的耳机协议均使用该服务)
-#define CHARACTERISTIC_WRITE @"2A06" // 写指令
-#define CHARACTERISTIC_NOTIFY @"CAB2" // 消息通知
+#define SERVICE_MAIN @"18A0" // 主服务UUID(新版本的耳机协议均使用该服务)
+#define CHARACTERISTIC_WRITE @"2AA0" // 写指令
+#define CHARACTERISTIC_NOTIFY @"2AA1" // 消息通知
 
 @protocol QCYDelegate
 - (void) onConnected: (QCYEarphone *)earphone;
